@@ -6,7 +6,7 @@ var product = new List<Product>();
 Console.Write("Enter the number of products: " );
 var numProd = int.Parse(Console.ReadLine() ?? "0");
 
-for(int i = 1; i < numProd; i++)
+for(int i = 1; i <= numProd; i++)
 {
 	Console.WriteLine($"Product #{i} data: ");
 
@@ -48,5 +48,5 @@ for(int i = 1; i < numProd; i++)
 
 foreach(var item in product)
 {
-	Console.WriteLine(item);
+	Console.WriteLine(item.PriceTag());
 }
